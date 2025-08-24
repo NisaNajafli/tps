@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root{
-    --blue: #4d5ea6
+    --blue: #399dd7
+}
+*{
+    font-family: "Noto Sans", sans-serif;
 }
 .container{
     padding: 0 90px;
@@ -24,7 +27,7 @@ nav i{
 }
 #phoneicon{
     text-decoration: none;
-    font: 14px Noto;
+    font-size: 14px;
     color: #fff;
     margin-left: 30px;
     display: flex;
@@ -34,7 +37,7 @@ nav i{
 #blueborder{
     width: 25px;
     height: 100px;
-    background-color: var(--blue);
+    background: linear-gradient(to bottom, #4d5ea6, #399dd7);
 }
 #logo img{
     width: 148px;
@@ -46,15 +49,16 @@ nav i{
     align-items: center;
 }
 .nav-right a{
-    background-color: var(--blue);
+    background: linear-gradient(to right, #4d5ea6, #399dd7, #4d5ea6);
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font: 14px Noto;
+    font-size: 14px;
     width: 188px;
     height: 44px;
-    text-align: center;
-    padding: 11px 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
     transition: clip-path 0.4s ease-in-out;
 }
@@ -88,17 +92,17 @@ nav i{
     color: var(--blue)
 }
 .hero__section-content h1{
-    font: 55px Noto;
+    font-size: 55px ;
     color: #fff;
     text-transform: uppercase;
 }
 .hero__section-content h4{
-    font: 28px Noto;
+    font: 28px Noto Sans;
     color: #fff;
     text-transform: uppercase;
 }
 .hero__section-content h5{
-    font: 22px Noto;
+    font: 22px Noto Sans;
     color: #fff;
     text-transform: uppercase;
 }

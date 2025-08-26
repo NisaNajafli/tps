@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --blue: #399dd7
 }
 
 .container{
-    padding: 0 60px;
+    padding: 0 60px !important;
 }
 header.scrolled {
     box-shadow: 10px -6px 15px black;
@@ -127,7 +127,7 @@ nav i{
     color: #1C1C20;
     font: 20px Noto Sans;
     font-weight: 300;
-    width: 33%;
+    width: 30%;
     height: 165px;
     clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
     display: flex;
@@ -158,7 +158,7 @@ nav i{
     color: #fff;
     font: 20px Noto Sans;
     font-weight: 300;
-    width: 33%;
+    width: 30%;
     height: 165px;
     clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
     transition: clip-path 0.4s ease-in-out;
@@ -391,11 +391,90 @@ nav i{
     background: rgb(255 255 255 / 86%);
     z-index: 1;
 }
+
+.faq__section{
+    background: url("../img/bgfnl.jpg") center/cover fixed;
+    position: relative;
+}
+.faq__section-content{
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
+}
+.faq__section-top{
+    position: relative;
+    z-index: 2;
+    padding: 60px 0 0 0 ;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.faq__section-top i{
+    font-size: 40px;
+    color: var(--blue)
+}
+.faq__section-top h2{
+    font: 36px Noto Sans;
+    text-transform: uppercase;
+
+}
+.overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255 255 255 / 96%);
+    z-index: 1;
+}
 footer{
     background-color: #333;
     height: 100%;
     padding-top: 40px;
 }
+.accordion{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Accordion ümumi item borderini sil */
+.accordion-item {
+    border: none !important;
+}
+
+/* Düymə (başlıq) üçün borderləri sil */
+.accordion-button {
+    background-color: #ddd !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+    font: 18px Roboto;
+    box-shadow: none !important;
+    border: none !important; 
+    height: 80px;
+}
+
+/* Bağlı olanda (collapsed) da border yox olsun */
+.accordion-button.collapsed {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Açıq olanda */
+.accordion-button:not(.collapsed) {
+    color: #999 !important;
+    background-color: #ddd !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* İçindəki mətn */
+.accordion-body {
+    color: #777 !important;
+    border: none !important;
+    font: 16px Roboto
+}
+
 #imgfooter{
     height: 34px;
     max-width: 34px;
@@ -494,7 +573,9 @@ footer{
     font: 12px Noto Sans;
     color: #fff
 }
-
+footer hr{
+    color: #fff
+}
 
 @media (max-width: 768px){
     .nav-right a{

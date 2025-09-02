@@ -3,9 +3,6 @@
     --blue: #399dd7
 }
 
-.container{
-    padding: 0 60px !important;
-}
 header.scrolled {
     box-shadow: 10px -6px 15px black;
 }
@@ -50,12 +47,12 @@ nav i{
     gap: 25px;
     align-items: center;
 }
-.nav-right a{
+#navphone{
     background: linear-gradient(to right, #4d5ea6, #399dd7, #4d5ea6);
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font: 14px Noto Sans;
+    font: 13px Noto Sans;
     width: 188px;
     height: 44px;
     display: flex;
@@ -64,7 +61,7 @@ nav i{
     clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
     transition: clip-path 0.4s ease-in-out;
 }
-.nav-right a:hover{
+#navphone:hover{
     clip-path: polygon(100% 0, 100% 28%, 100% 100%, 0 100%, 0 0);
 }
 .nav-right i{
@@ -120,7 +117,7 @@ nav i{
     row-gap: 30px;
     margin-bottom: 150px;
 }
-.about__section-content-top a{
+/* .about__section-content-top  a{
     background-color: #F9F9F9;
     text-decoration: none;
     text-transform: uppercase;
@@ -136,6 +133,36 @@ nav i{
     position: relative;
     padding: 0 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+ .atag a{
+    font: 20px Noto Sans;
+    font-weight: 300;
+    width: 100%;
+    height: 165px;
+    clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1C1C20;
+    background-color: #f9f9f9;
+    padding: 0 20px;
+ }
+ .atag{
+    display: inline-block;
+    width: 32%;
+    padding: 0; 
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.25))
+            drop-shadow(-8px 0 10px rgba(0,0,0,0.15));
+    overflow: visible; 
+    background: transparent; 
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
 }
 
 .about__section-content-top i{
@@ -158,9 +185,8 @@ nav i{
     color: #fff;
     font: 20px Noto Sans;
     font-weight: 300;
-    width: 30%;
+    width: 100%;
     height: 165px;
-    clip-path: polygon(83% 0, 100% 38%, 100% 99%, 0 100%, 0 0);
     transition: clip-path 0.4s ease-in-out;
     display: flex;
     align-items: center;
@@ -353,7 +379,7 @@ nav i{
 }
 
 .offers__section-content-left p{
-    font: 16px Noto Sans;
+    font: 20px Noto Sans;
     margin-bottom: 16px;
 }
 .offers__section-content-left span{
@@ -372,6 +398,7 @@ nav i{
     width: 100%;
     height: 560px;
     object-fit: cover;
+    border-radius:4%
 }
 .offers__section-content{
     position: relative;
@@ -381,6 +408,7 @@ nav i{
     margin-bottom: 60px;
     flex-direction: row;
     overflow: hidden;
+    
 }
 .offers__section .overlay2 {
     position: absolute;
@@ -439,12 +467,11 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
-/* Accordion ümumi item borderini sil */
 .accordion-item {
     border: none !important;
 }
 
-/* Düymə (başlıq) üçün borderləri sil */
+
 .accordion-button {
     background-color: #ddd !important;
     color: rgba(0, 0, 0, 0.7) !important;
@@ -454,25 +481,27 @@ footer{
     height: 80px;
 }
 
-/* Bağlı olanda (collapsed) da border yox olsun */
+
 .accordion-button.collapsed {
     border: none !important;
     box-shadow: none !important;
+    height: 100%;
 }
 
-/* Açıq olanda */
+
 .accordion-button:not(.collapsed) {
     color: #999 !important;
     background-color: #ddd !important;
     box-shadow: none !important;
     border: none !important;
+     height: 100%;
 }
 
-/* İçindəki mətn */
+
 .accordion-body {
     color: #777 !important;
     border: none !important;
-    font: 16px Roboto
+    font: 16px Roboto;
 }
 
 #imgfooter{
@@ -489,7 +518,7 @@ footer{
     
 }
 .footer__top > div{
-    border-right: 1px solid #fff;
+    /* border-right: 1px solid #fff; */
     padding-right: 40px;
 }
 .footer-logo{
@@ -569,16 +598,25 @@ footer{
     align-items:center;
     justify-content: center;
 }
-.footer__bottom p{
+.footer__bottom a{
     font: 12px Noto Sans;
     color: #fff
+}
+.footer__bottom a:hover{
+    color: #ef3f23
 }
 footer hr{
     color: #fff
 }
+#jeywalogo{
+    width: 180px;
+    height: 70px;
+    margin-top: 18px;
+}
+
 
 @media (max-width: 768px){
-    .nav-right a{
+    #navphone{
         display: none;
     }
     nav{
@@ -591,19 +629,19 @@ footer hr{
     #phoneicon {
         font-size: 11px;
         margin-left: 3px;
-        gap: 3px;
+        gap: 10px;
     }
     .nav-right {
         gap: 9px
     }
     .hero__section h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .hero__section h4{
         font-size: 20px;
     }
     .hero__section h5{
-        font-size: 16px;
+        font-size: 17px;
     }
     .about__section-content-bottom {
         flex-direction: column;
@@ -624,10 +662,11 @@ footer hr{
         height: 45px;
         margin-bottom: 10px;
     }
-    .footer__content {
-        flex-direction: column;
-        gap: 20px;
+    .offers__section-content img{
+        height: 400px;
     }
+
+
 
 
 }
@@ -665,6 +704,104 @@ footer hr{
     .contactfooter{
         gap: 6px;
     }
+    #navphone{
+        font: 10px Noto Sans;
+        width: 133px;
+        height: 41px;
+     }
+     .about__section-content-top i {
+        font-size: 20px;
+    }
+    #offerimg{
+        width: 100%;
+    }
+    .footer__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .atag{
+        width: 80%;
+    }
+    .products__section-content-bottom h3{
+        padding: 10px;
+    }
+    #offerimg{
+        width: 90% !important;
+    }
+    .accordion{
+        width: 90%;
+    }
+     footer {
+        padding: 30px 15px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__top > div {
+        border-right: none;
+        padding: 20px;
+        background: #444;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        width: 60%;
+        justify-content: center !important;
+    }
+
+    .footer-logo {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .contactfooter {
+        gap: 10px;
+    }
+
+    .contactfooter a {
+        font-size: 14px;
+    }
+
+    #locationfooter a,
+    #workhoursfooter p {
+        font-size: 14px;
+        line-height: 1.4;
+        justify-content: center;
+    }
+
+    #jeywalogo {
+        width: 140px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer__content img {
+        margin: 0 6px;
+    }
+
+    .footer__bottom {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .offers__section-content img{
+        height: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .atag{
+        width: 45%;
+    }
 }
 @media (max-width: 1200px){
     .footer__top > div {
@@ -673,5 +810,32 @@ footer hr{
     .footer-logo {
         gap: 6px;
     }
+    .about__section-content-top i {
+        font-size: 24px;
+    }
+    .about__section-content-top a{
+        font-size: 16px;
+    }
+    #lasta{
+        font-size: 16px;
+    }
     
+}
+@media (max-width: 440px){
+    .hero__section h1{
+        font-size: 20px !important;
+    }
+    .hero__section h4{
+        font-size: 15px !important;
+    }
+    .hero__section h5{
+        font-size: 12px !important;
+    }
+    .atag{
+        width: 90%;
+    }
+
+    .faq__section-top h2{
+        font-size: 27px;
+    }
 }

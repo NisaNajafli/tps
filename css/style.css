@@ -22,7 +22,7 @@ nav i{
 .nav-left{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
 }
 #phoneicon{
     text-decoration: none;
@@ -681,6 +681,9 @@ footer hr{
     .products__section-content-bottom h3{
         font-size: 16px;
         width: 60%;
+    }
+    .hero__section-content h1{
+        font-size: 40px;
     }
 }
 @media (max-width: 992px){
